@@ -3,9 +3,18 @@ package me.zhiyao.blood
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
+/**
+ *
+ * @author WangZhiYao
+ * @date 2021/2/24
+ */
 @SpringBootApplication
-class BloodApplication
+class BloodApplication {
 
-fun main(args: Array<String>) {
-    runApplication<BloodApplication>(*args)
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            runApplication<BloodApplication>(*args)
+        }
+    }
 }
